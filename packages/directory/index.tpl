@@ -10,9 +10,8 @@
 	{if !in_array($core.page.name, array('top_listings', 'new_listings', 'random_listings'))}
 		{if !isset($listings_sorting) || $listings_sorting}
 			<div class="ia-sorting m-t">
-				{if 'my_listings' != $core.page.name}
-					<span class="ia-sorting__found">{lang key='listings_found'}: {if $core.config.display_children_listing}{$category.num_all_listings}{else}{$category.num_listings}{/if}</span>
-				{/if}
+				<span class="ia-sorting__found">{lang key='listings_found'}: {$pagination.total}</span>
+
 				<div class="ia-sorting__by">
 					<span>{lang key='sort_by'}:</span>
 					<div class="btn-group">
@@ -60,7 +59,7 @@
 			{/foreach}
 		</div>
 
-		{navigation aTotal=$aTotal aTemplate=$aTemplate aItemsPerPage=$aItemsPerPage aNumPageItems=5 aTruncateParam=1}
+		{navigation aTotal=$pagination.total aTemplate=$pagination.url aItemsPerPage=$pagination.limit aIgnore=true aTruncateParam=1}
 	</div>
 {elseif isset($category) && $category.parent_id > 0}
 	<div class="alert alert-info">{lang key='no_web_listings'}</div>
