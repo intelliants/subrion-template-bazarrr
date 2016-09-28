@@ -121,11 +121,11 @@
 
 						<div class="search-navbar__input">
 							<div class="row">
-								<div class="col-sm-10">
+								<div class="col-sm-10 col-xs-9">
 									<input type="text" name="q" class="form-control input-lg" placeholder="{lang key='search_placeholder'}">
 								</div>
-								<div class="col-sm-2">
-									<button class="btn btn-lg btn-block btn-primary" type="submit">{lang key='search'}</span></button>
+								<div class="col-sm-2 col-xs-3">
+									<button class="btn btn-lg btn-block btn-primary" type="submit"><span class="fa fa-search visible-xs-inline-block"></span><span class="hidden-xs">{lang key='search'}</span></button>
 								</div>
 							</div>
 						</div>

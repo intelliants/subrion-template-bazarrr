@@ -8,6 +8,15 @@
   border: 0 none;
   background-color: @navbar-bg;
   font-family: @headings-font-family;
+
+  .navbar-collapse {
+    border-color: lighten(@brand-dark, 5%);
+    .box-shadow(none);
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+  }
 }
 
 .navbar-sticky {
@@ -101,7 +110,7 @@
     li {
 
       > a {
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid lighten(@brand-dark, 5%);
       }
     }
   }
@@ -213,14 +222,16 @@
       display: none;
     }
 
-    .input-group {
+    &__input {
       position: static;
-      opacity: 1;
       visibility: visible;
-      width: auto;
-      padding: 10px;
-      margin-top: 0;
-      background: #f6f6f6;
+      opacity: 1;
+      background-color: transparent;
+
+      input {
+        background: lighten(@brand-dark, 5%);
+        border-color: transparent;
+      }
     }
 
   }

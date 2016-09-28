@@ -67,6 +67,21 @@ body {
     background: #fff;
     padding: 20px;
   }
+
+  @media (max-width: @grid-float-breakpoint) {
+    display: block;
+    height: auto;
+
+    &__aside,
+    &__content {
+      display: block;
+      width: auto;
+    }
+
+    &__aside {
+      display: none;
+    }
+  }
 }
 
 
