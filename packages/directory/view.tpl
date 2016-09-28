@@ -17,6 +17,16 @@
 		<div class="ia-item__content">
 			<p><span class="fa fa-link"></span> <a href="{$item.url}" target="_blank">{$item.url|strip_tags|truncate:50:'...'}</a></p>
 
+			{if isset($item.breadcrumb) && !isset($category) || $item.category_id != $category.id}
+				<p>
+					<span class="fa fa-folder-o"></span>
+					{foreach $item.breadcrumb as $single_item}
+						{if 1 !==  $single_item@iteration} <span class="fa fa-angle-right"></span> {/if}
+						<a href="{$single_item.url}">{$single_item.title}</a>
+					{/foreach}
+				</p>
+			{/if}
+
 			{if $core.config.directory_enable_alexarank && $item.alexa_rank}
 				<p><span class="fa fa-globe"></span> {lang key='alexa_rank'} <a href="http://www.alexa.com/siteinfo/{$item.domain}#">{$item.alexa_rank}</a></p>
 			{/if}
@@ -25,7 +35,6 @@
 				<span class="fa fa-calendar"></span>
 				{lang key='on'} {$item.date_added|date_format:$core.config.date_format}
 			</span>
-			<span class="ia-item-view__info__item"><span class="fa fa-folder"></span> <a href="{ia_url item='categs' data=$item type='url'}">{$item.category_title}</a></span>
 			<span class="ia-item-view__info__item"><span class="fa fa-eye"></span> {$item.views_num} {lang key='views'}</span>
 
 			<div class="clearfix m-t">{$item.description}</div>
