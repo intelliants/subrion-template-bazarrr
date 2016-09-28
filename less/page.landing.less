@@ -1,0 +1,25 @@
+.ia-carousel {
+
+  .owl-nav {
+    margin: 0;
+
+    [class*='owl-'] {
+      position: absolute;
+      left: -60px;
+      top: 50%;
+      margin-top: -20px;
+      font-size: 22px;
+      color: fade(@text-color, 50%);
+      background: none;
+
+      &:hover {
+        background: @brand-primary;
+      }
+    }
+
+    .owl-next {
+      left: auto;
+      right: -60px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// for global layout see global.less
+
+.dir-menu,
+#content_directory_categories_tree {
+  margin: -20px -20px 0;
+
+  .list-group-item {
+    border: 0 none;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+    padding: 14px 20px;
+
+    &.m_add_listing {
+      position: relative;
+
+      &::after {
+        .fa-icon();
+        content: @fa-var-plus-square;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 16px;
+        color: fade(@text-color, 50%);
+      }
+    }
+
+    &.active::after {
+      color: #fff;
+    }
+  }
+}
+
+#content_directory_categories_tree {
+  margin-top: 0;
+}
+
+.dir-stats {
+
+  .box__caption {
+    display: none;
+  }
+
+  .box__content {
+    padding: 0;
+  }
+}
+
+.b-stat {
+  font-family: @headings-font-family;
+
+  & + & {
+    margin-top: 15px;
+  }
+
+  &__value {
+    font-size: 30px;
+    line-height: 30px;
+    color: @brand-dark;
+    font-weight: bold;
+    width: 200px;
+    .text-overflow();
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: fade(@brand-dark, 30%);
+  }
+}
+
+.lt__aside {
+
+  .box__caption {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
