@@ -2,7 +2,7 @@
 	<div class="row">
 		{foreach $latest_listings as $listing name=latest_listings}
 			<div class="col-md-4">
-				{include file='extra:directory/list-listings'}
+				{include file='extra:directory/list-listings' decorate=false}
 			</div>
 
 			{if $listing@iteration % 3 == 0 && !$listing@last}
