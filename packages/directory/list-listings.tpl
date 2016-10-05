@@ -3,9 +3,6 @@
 		<div class="card__image">
 			{if $core.config.directory_enable_thumbshots}
 				<img src="http://free.pagepeeker.com/v2/thumbs.php?size=m&url={$listing.url|escape:url}" class="img-responsive">
-				{*if $listing.rank}
-					{section name=star loop=$listing.rank}<span class="fa fa-star text-warning"></span> {/section}
-				{/if*}
 			{else}
 				<img src="{$img}no-preview.png" class="img-responsive" alt="">
 			{/if}
@@ -35,7 +32,14 @@
 			{/if}
 			<span class="fa fa-clock-o"></span> {$listing.date_added|date_format:$core.config.date_format}
 		</div>
-		<div class="card__info__views"><span class="fa fa-eye"></span> {$listing.views_num}</div>
+		{if $listing.rank}
+			<div class="card__info__views text-warning">
+				<span class="fa fa-star"></span> {$listing.rank}
+			</div>
+		{/if}
+		<div class="card__info__views">
+			<span class="fa fa-eye"></span> {$listing.views_num} 
+		</div>
 	</div>
 	<div class="card__actions">
 		{printFavorites item=$listing itemtype='listings' guests=true}
