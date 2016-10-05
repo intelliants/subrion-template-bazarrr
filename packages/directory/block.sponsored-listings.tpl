@@ -1,7 +1,7 @@
 {if !empty($sponsored_listings)}
 	<div class="cards-list">
 		{foreach $sponsored_listings as $listing name=sponsored_listings}
-			<div class="card card--sponsored">
+			<div class="card card--sponsored -bg-default">
 				<div class="card__header">
 					<div class="card__image">
 						{if $core.config.directory_enable_thumbshots}
