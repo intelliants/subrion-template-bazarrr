@@ -31,7 +31,7 @@
 									{/if}
 								</div>
 							</div>
-							<div class="card__body">{$listing.short_description|strip_tags|truncate:120:'...'}</div>
+							<div class="card__body">{$listing.description|strip_tags|truncate:120:'...'}</div>
 							<div class="card__info">
 								<div class="card__info__date"><span class="label label-warning">{lang key='sponsored'}</span> <span class="fa fa-clock-o"></span> {$listing.date_added|date_format:$core.config.date_format}</div>
 								<div class="card__info__views"><span class="fa fa-eye"></span> {$listing.views_num} {lang key='views'}</div>

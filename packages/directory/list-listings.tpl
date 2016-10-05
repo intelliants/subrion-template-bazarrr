@@ -25,7 +25,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="card__body">{$listing.short_description|strip_tags|truncate:120:'...'}</div>
+	<div class="card__body">{$listing.description|strip_tags|truncate:120:'...'}</div>
 	<div class="card__info">
 		<div class="card__info__date">
 			{if $listing.sponsored}
