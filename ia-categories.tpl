@@ -1,8 +1,9 @@
 {if isset($categories) && $categories}
 	{$num_columns = ((isset($num_columns)) ? $num_columns : 2)}
 	{$class_names = ['col-md-12', 'col-md-6', 'col-md-4', 'col-md-3']}
+	{$i = 0}
 
-	{if $category.parent_id >= 0}<div class="cat-list-simple">{/if}
+	<div class="cat-list-simple">
 		<div class="row ia-cats">
 			{foreach $categories as $entry}
 				<div class="{$class_names[$num_columns - 1]}">
@@ -32,13 +33,18 @@
 
 				{if $entry@iteration % $num_columns == 0 && !$entry@last}
 					</div>
+					{$i = $i+1}
+					{if isset($category) && $category.parent_id >= 0 && $i == 4}
+						<div class="cat-list-simple__hidden">
+					{/if}
 					<div class="row ia-cats">
 				{/if}
 			{/foreach}
 		</div>
+		{if isset($category) && $category.parent_id >= 0 && $i > 4}</div>{/if}
 
-	{if $category.parent_id >= 0}
+		{if isset($category) && $category.parent_id >= 0 && $i > 4}
 			<div class="cat-list-simple__more"><a class="js-more-cats" href="#" data-less-cats-text="<span class='fa fa-angle-up'></span> {lang key='less_cats'}" data-more-cats-text="<span class='fa fa-angle-down'></span> {lang key='more_cats'}"><span class="fa fa-angle-down"></span> {lang key='more_cats'}</a></div>
-		</div>
-	{/if}
+		{/if}
+	</div>
 {/if}

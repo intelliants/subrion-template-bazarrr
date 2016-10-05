@@ -9,7 +9,7 @@
 {if $listings}
 	{if !in_array($core.page.name, array('top_listings', 'new_listings', 'random_listings'))}
 		{if !isset($listings_sorting) || $listings_sorting}
-			<div class="ia-sorting m-t">
+			<div class="ia-sorting">
 				<span class="ia-sorting__found">{lang key='listings_found'}: {$pagination.total}</span>
 
 				<div class="ia-sorting__by">

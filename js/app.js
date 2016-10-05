@@ -75,29 +75,24 @@ $(function() {
 	});
 
 	// expand categories list
-	if ($('.cat-list-simple').length) {
-		$('.cat-list-simple .row:nth-child(4)').nextAll('.row')
-			.wrapAll('<div class="cat-list-simple__hidden"></div>')
+	$('.js-more-cats').on('click', function(e) {
+		e.preventDefault();
 
-		$('.js-more-cats').on('click', function(e) {
-			e.preventDefault();
+		var $this = $(this),
+			$hiddenList = $('.cat-list-simple__hidden'),
+			lessText = $this.data('less-cats-text'),
+			moreText = $this.data('more-cats-text');
 
-			var $this = $(this),
-				$hiddenList = $('.cat-list-simple__hidden'),
-				lessText = $this.data('less-cats-text'),
-				moreText = $this.data('more-cats-text');
-
-			if (!$hiddenList.hasClass('is-visible')) {
-				$hiddenList.slideDown('fast', function() {
-					$hiddenList.addClass('is-visible');
-					$this.html(lessText);
-				});
-			} else {
-				$hiddenList.slideUp('fast', function() {
-					$hiddenList.removeClass('is-visible');
-					$this.html(moreText);
-				});
-			}
-		});
-	}
+		if (!$hiddenList.hasClass('is-visible')) {
+			$hiddenList.slideDown('fast', function() {
+				$hiddenList.addClass('is-visible');
+				$this.html(lessText);
+			});
+		} else {
+			$hiddenList.slideUp('fast', function() {
+				$hiddenList.removeClass('is-visible');
+				$this.html(moreText);
+			});
+		}
+	});
 });
