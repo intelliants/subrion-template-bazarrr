@@ -382,6 +382,31 @@
   }
 }
 
+.cat-list-simple {
+
+  &__hidden {
+    display: none;
+  }
+
+  &__more {
+    text-align: center;
+    padding: @vertical-rhythm/2 @vertical-rhythm/2 0;
+
+    a,
+    a:focus {
+      font-size: 16px;
+      text-decoration: none;
+      color: fade(@text-color, 50%);
+      border-bottom: 1px dashed fade(@text-color, 50%);
+
+      &:hover {
+        color: fade(@text-color, 80%);
+        border-bottom-color: fade(@text-color, 80%);
+      }
+    }
+  }
+}
+
 
 
 //
