@@ -232,7 +232,6 @@
 			   type="smarty">
 			<![CDATA[
 <p>Anyone can post a link to our directory. Please go to <a href="{$smarty.const.IA_URL}registration/">Registration</a> page and follow the instructions.</p>
-<p>Ne lorem percipit efficiantur mei, ius ut simul vidisse. An vel probatus explicari appellantur.</p>
 			]]>
 		</block>
 	</blocks>
