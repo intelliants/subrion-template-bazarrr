@@ -18,3 +18,5 @@
 		{lang key='no_web_listings2'}
 	</div>
 {/if}
+
+{_v()}

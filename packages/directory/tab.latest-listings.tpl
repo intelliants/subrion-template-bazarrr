@@ -1,6 +1,6 @@
 <div class="cards">
 	<div class="row">
-		{foreach $latest_listings as $listing name=latest_listings}
+		{foreach $listingsBlocksData.tabs_new as $listing}
 			<div class="col-md-4">
 				{include file='extra:directory/list-listings' decorate=false}
 			</div>

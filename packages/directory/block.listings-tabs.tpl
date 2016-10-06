@@ -17,7 +17,7 @@
 		<div class="tab-content" id="dirListingsTabsContent">
 			{if $core.config.directory_listings_tabs_new}
 				<div id="tab-dirListingsLatest" class="tab-pane active">
-					{if !empty($latest_listings)}
+					{if !empty($listingsBlocksData.tabs_new)}
 						{include file='extra:directory/tab.latest-listings'}
 					{else}
 						<div class="alert alert-info">
@@ -28,7 +28,7 @@
 			{/if}
 			{if $core.config.directory_listings_tabs_popular}
 				<div id="tab-dirListingsPopular" class="tab-pane">
-					{if !empty($popular_listings)}
+					{if !empty($listingsBlocksData.tabs_popular)}
 						{include file='extra:directory/tab.popular-listings'}
 					{else}
 						<div class="alert alert-info">
@@ -39,7 +39,7 @@
 			{/if}
 			{if $core.config.directory_listings_tabs_random}
 				<div id="tab-dirListingsRandom" class="tab-pane">
-					{if !empty($random_listings)}
+					{if !empty($listingsBlocksData.tabs_random)}
 						{include file='extra:directory/tab.random-listings'}
 					{else}
 						<div class="alert alert-info">

@@ -1,6 +1,6 @@
-{if !empty($featured_listings)}
+{if $listingsBlocksData.featured}
 	<div class="cards-list">
-		{foreach $featured_listings as $listing name=featured_listings}
+		{foreach $listingsBlocksData.featured as $listing}
 			<div class="card card--featured">
 				<div class="card__header">
 					<div class="card__image">

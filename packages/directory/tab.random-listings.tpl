@@ -1,6 +1,6 @@
 <div class="cards">
 	<div class="row">
-		{foreach $random_listings as $listing name=random_listings}
+		{foreach $listingsBlocksData.tabs_random as $listing}
 			<div class="col-md-4">
 				{include file='extra:directory/list-listings' decorate=false}
 			</div>

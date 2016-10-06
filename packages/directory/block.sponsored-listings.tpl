@@ -1,6 +1,6 @@
-{if !empty($sponsored_listings)}
+{if $listingsBlocksData.sponsored}
 	<div class="cards-list">
-		{foreach $sponsored_listings as $listing name=sponsored_listings}
+		{foreach $listingsBlocksData.sponsored as $listing}
 			<div class="card card--sponsored -bg-default">
 				<div class="card__header">
 					<div class="card__image">

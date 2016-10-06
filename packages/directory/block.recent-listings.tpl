@@ -1,7 +1,7 @@
-{if !empty($latest_listings)}
+{if $listingsBlocksData.recent}
 	<div class="cards">
 		<div class="row">
-			{foreach $latest_listings as $listing}
+			{foreach $listingsBlocksData.recent as $listing}
 				<div class="col-md-3">
 					{include file='extra:directory/list-listings' decorate=false}
 				</div>
