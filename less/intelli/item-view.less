@@ -6,19 +6,27 @@
 .ia-item--view {
 
   .ia-item__image {
+    img {
+      border-radius: 50%;
+    }
 
     @media (min-width: @screen-phone) {
       margin-right: @gap+@gap;
     }
 
     @media (min-width: @grid-float-breakpoint) {
-      max-width: 200px;
+      max-width: 110px;
     }
   }
 
-  + .tabbable {
-    margin-top: @gap;
+  + .tabbable,
+  + .box {
+    margin-top: @gap*2;
   }
+}
+
+.tabbable + .box {
+  margin-top: @gap*2;
 }
 
 
