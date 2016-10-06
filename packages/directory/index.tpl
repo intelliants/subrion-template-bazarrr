@@ -29,15 +29,15 @@
 					<div class="btn-group">
 						<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="#">
 							{if $sort_type == 'asc'}
-								{lang key='ascending'}
+								{lang key='asc'}
 							{else}
-								{lang key='descending'}
+								{lang key='desc'}
 							{/if}
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu pull-right">
-							<li><a href="{$smarty.const.IA_SELF}?order_type=asc" rel="nofollow"><span class="fa fa-long-arrow-down"></span> {lang key='ascending'}</a></li>
-							<li><a href="{$smarty.const.IA_SELF}?order_type=desc" rel="nofollow"><span class="fa fa-long-arrow-up"></span> {lang key='descending'}</a></li>
+							<li><a href="{$smarty.const.IA_SELF}?order_type=asc" rel="nofollow"><span class="fa fa-long-arrow-down"></span> {lang key='asc'}</a></li>
+							<li><a href="{$smarty.const.IA_SELF}?order_type=desc" rel="nofollow"><span class="fa fa-long-arrow-up"></span> {lang key='desc'}</a></li>
 						</ul>
 					</div>
 				</div>
