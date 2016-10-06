@@ -1,8 +1,8 @@
-{if !empty($sponsored_listings)}
+{if $listingsBlocksData.sponsored}
 	{ia_block header=1 title='Sponsored listings' movable=false name='sponsored' collapsible=false classname='dir-sponsored'}
 		<div class="cards">
 			<div class="row">
-				{foreach $sponsored_listings as $listing name=sponsored_listings}
+				{foreach $listingsBlocksData.sponsored as $listing}
 					<div class="col-md-4">
 						<div class="card">
 							<div class="card__header">

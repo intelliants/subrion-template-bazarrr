@@ -1,8 +1,8 @@
-{if !empty($featured_listings)}
+{if $listingsBlocksData.featured}
 	{ia_block header=1 title='Featured listings' movable=false name='featured' collapsible=false classname='dir-featured'}
 		<div class="cards">
 			<div class="row">
-				{foreach $featured_listings as $listing name=featured_listings}
+				{foreach $listingsBlocksData.featured as $listing}
 					<div class="col-md-4">
 						<div class="card">
 							<div class="card__header">
