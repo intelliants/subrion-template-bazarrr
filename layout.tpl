@@ -81,8 +81,8 @@
 		<div class="inventory">
 			<div class="container-fluid">
 				{ia_blocks block='inventory'}
-				{include 'language-selector.tpl'}
 				{ia_blocks block='account'}
+				{include 'language-selector.tpl'}
 				{if $core.config.website_social}
 					<ul class="nav-inventory nav-inventory-social pull-left hidden-xs">
 						{if $core.config.website_social_t}<li><a href="{$core.config.website_social_t}" class="twitter"><span class="fa fa-twitter"></span></a></li>{/if}

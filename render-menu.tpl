@@ -5,6 +5,7 @@
 {elseif 'account' == $position}
 	{if 'account' == $menu.name && $member && $core.config.members_enabled}
 		<ul class="nav-inventory pull-right nav-account">
+			<li class="hidden-xs{if 'favorites' == $core.page.name} active{/if}"><a href="{$smarty.const.IA_URL}favorites/"><i class="material-icons">stars</i> {lang key='favorites'}</a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					{printImage imgfile=$member.avatar title=$member.fullname|default:$member.username class='img-circle' gravatar=true email=$member.email width=18}
@@ -20,6 +21,7 @@
 		</ul>
 	{else}
 		<ul class="nav-inventory pull-right">
+			<li class="hidden-xs{if 'favorites' == $core.page.name} active{/if}"><a href="{$smarty.const.IA_URL}favorites/"><i class="material-icons">stars</i> {lang key='favorites'}</a></li>
 			<li{if 'login' == $core.page.name} class="active"{/if}><a href="{$smarty.const.IA_URL}login/"><i class="material-icons">account_circle</i> {lang key='my_account'}</a></li>
 		</ul>
 	{/if}
