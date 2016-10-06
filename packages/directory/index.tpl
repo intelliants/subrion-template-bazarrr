@@ -1,5 +1,5 @@
 {if isset($category) && $category.description}
-	<div class="page-content">{$category.description}</div>
+	<div class="cat-desc">{$category.description}</div>
 {/if}
 
 {if 'directory_home' == $core.page.name}
