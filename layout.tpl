@@ -47,7 +47,7 @@
 				a:focus { color: {$core.config.custom_color_link}; }
 				a:hover { color: {$core.config.custom_color_link_hover}; }
 
-				.inventory { background-color: {$core.config.custom_color_inventory_bg}; }
+				.inventory { background-color: {$core.config.custom_color_inventory_bg}; border-color: {$core.config.custom_color_inventory_bg}; }
 				.nav-inventory > li > a,
 				.nav-inventory > li > a:focus { color: {$core.config.custom_color_inventory_link}; }
 				.nav-inventory > li > a:hover { color: {$core.config.custom_color_inventory_link_hover}; }
@@ -56,12 +56,15 @@
 				.nav-inventory > li.active > a:hover { color: {$core.config.custom_color_inventory_link_active}; }
 
 				.navbar-default { background-color: {$core.config.custom_color_navbar_bg}; }
+				.navbar-default .navbar-collapse { border-color: {$core.config.custom_color_navbar_bg}; }
 				.navbar-default .navbar-nav > li > a,
 				.navbar-default .navbar-nav > li > a:focus { color: {$core.config.custom_color_navbar_link}; }
 				.navbar-default .navbar-nav > li > a:hover { color: {$core.config.custom_color_navbar_link_hover}; }
 				.navbar-default .navbar-nav > li.active > a,
 				.navbar-default .navbar-nav > li.active > a:focus,
 				.navbar-default .navbar-nav > li.active > a:hover { color: {$core.config.custom_color_navbar_link_active}; }
+
+				.navbar-brand { border-color: {$core.config.custom_color_navbar_bg}; }
 
 				.footer { background: {$core.config.footer_bg}; }
 				.nav-footer > li > a,
