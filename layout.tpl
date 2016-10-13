@@ -139,7 +139,7 @@
 		</nav>
 
 		{if isset($smarty.get.elements)}
-			{include file='page.elements.tpl'}
+			{include 'page.elements.tpl'}
 		{else}
 			<div class="lt">
 				<div class="lt__aside">
@@ -159,8 +159,8 @@
 					<div class="content">
 						<div class="container-fluid">
 							{if $core.page.name == 'index'}
-								{include file='block.index.sponsored.tpl'}
-								{include file='block.index.featured.tpl'}
+								{include 'block.index.sponsored.tpl'}
+								{include 'block.index.featured.tpl'}
 								{ia_blocks block='verytop'}
 								{ia_blocks block='bottom'}
 							{else}
