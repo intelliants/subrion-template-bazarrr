@@ -8,7 +8,7 @@
 			<li class="hidden-xs{if 'favorites' == $core.page.name} active{/if}"><a href="{$smarty.const.IA_URL}favorites/"><i class="material-icons">stars</i> {lang key='favorites'}</a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					{printImage imgfile=$member.avatar title=$member.fullname|default:$member.username class='img-circle' gravatar=true email=$member.email width=18}
+					{printImage imgfile=$member.avatar.path title=$member.fullname|default:$member.username gravatar=true email=$member.email}
 					{$member.fullname|default:$member.username}
 					<i class="material-icons">keyboard_arrow_down</i>
 				</a>
@@ -16,7 +16,7 @@
 				{ia_menu menus=$menu.contents class='dropdown-menu pull-right' loginout=true}
 			</li>
 			{access object='admin_access'}
-				<li><a rel="nofollow" href="{$smarty.const.IA_ADMIN_URL}" target="_blank" title="{lang key='admin_dashboard'}"><span class="fa fa-cog"></span><span class="hidden-lg"> {lang key='admin_dashboard'}</span></a></li>
+				<li><a rel="nofollow" href="{$smarty.const.IA_ADMIN_URL}" target="_blank" title="{lang key='admin_dashboard'}"><span class="fa fa-cog"></span><span class="hidden-xs"> {lang key='admin_dashboard'}</span></a></li>
 			{/access}
 		</ul>
 	{else}
