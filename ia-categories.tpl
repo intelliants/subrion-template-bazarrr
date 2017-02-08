@@ -9,11 +9,7 @@
 				<div class="{$class_names[$num_columns - 1]}">
 					<div class="ia-cat">
 						{if isset($icons) && $icons}
-							{if isset($entry.icon) && $entry.icon}
-								<img src="{$core.page.nonProtocolUrl}uploads/{$entry.icon.path}" alt="{$entry.title}">
-							{else}
-								<span class="fa fa-folder-open"></span>
-							{/if}
+							<span class="fa{if isset($entry.icon) && $entry.icon} {$entry.icon}{else} fa-folder-open{/if}"></span>
 						{/if}
 
 						{if isset($entry.crossed) && $entry.crossed}@&nbsp;{/if}<a href="{ia_url type='url' item=$item data=$entry}">{$entry.title|escape:'html'}</a>
