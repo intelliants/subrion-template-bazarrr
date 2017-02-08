@@ -20,9 +20,9 @@
 			{if isset($item.breadcrumb) && !isset($category) || $item.category_id != $category.id}
 				<p>
 					<span class="fa fa-folder-o"></span>
-					{foreach $item.breadcrumb as $single_item}
-						{if 1 !==  $single_item@iteration} <span class="fa fa-angle-right"></span> {/if}
-						<a href="{$single_item.url}">{$single_item.title}</a>
+					{foreach $item.breadcrumb as $title => $url}
+						{if 1 !==  $url@iteration} <span class="fa fa-angle-right"></span> {/if}
+						<a href="{$url}">{$title}</a>
 					{/foreach}
 				</p>
 			{/if}
