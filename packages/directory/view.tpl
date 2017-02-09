@@ -28,7 +28,7 @@
 			{/if}
 
 			{if $core.config.directory_enable_alexarank && $item.alexa_rank}
-				<p><span class="fa fa-globe"></span> {lang key='alexa_rank'} <a href="http://www.alexa.com/siteinfo/{$item.domain}#">{$item.alexa_rank}</a></p>
+				<p><span class="fa fa-globe"></span> {lang key='alexa_rank'} <a href="http://www.alexa.com/siteinfo/{$item.domain}#" target="_blank">{$item.alexa_rank}</a></p>
 			{/if}
 
 			<span class="ia-item-view__info__item">
