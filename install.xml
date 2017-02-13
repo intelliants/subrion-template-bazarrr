@@ -245,7 +245,6 @@
 		<phrase category="frontend" key="back_to_top">Back to top</phrase>
 		<phrase category="frontend" key="admin_dashboard">Admin Dashboard</phrase>
 		<phrase category="frontend" key="search_placeholder">Type here something to search...</phrase>
-		<phrase category="frontend" key="listings_found">Listings found</phrase>
 		<phrase category="frontend" key="more_cats">More categories</phrase>
 		<phrase category="frontend" key="less_cats">Less categories</phrase>
 	</phrases>
