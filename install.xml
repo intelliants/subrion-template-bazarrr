@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<template name="bazarrr">
+<module type="template" name="bazarrr">
 	<title>Bazarrr</title>
 	<summary>Directory template</summary>
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants</contributor>
 	<version>1.0.0</version>
 	<date>2016-09-28</date>
-	<compatibility>4.1</compatibility>
+	<compatibility>4.1.0</compatibility>
+
+	<dependency type="package" exist="1">directory</dependency>
 
 	<layout>
 		<position menu="1" movable="0">account</position>
@@ -247,4 +249,4 @@
 		<phrase category="frontend" key="more_cats">More categories</phrase>
 		<phrase category="frontend" key="less_cats">Less categories</phrase>
 	</phrases>
-</template>
+</module>
