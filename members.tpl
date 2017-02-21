@@ -1,4 +1,4 @@
-<div class="tabbable members-tabs">
+<div class="members-tabs">
 	<ul class="nav nav-tabs">
 		<li><span>{lang key='sort_by'}</span></li>
 		<li{if !$activeGroup} class="active"{/if}><a href="{$smarty.const.IA_URL}members/?group=all">{lang key='all'}</a></li>
