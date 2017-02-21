@@ -5,7 +5,7 @@
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants</contributor>
 	<version>1.0.0</version>
-	<date>2016-09-28</date>
+	<date>2017-02-21</date>
 	<compatibility>4.1.0</compatibility>
 
 	<dependency type="package" exist="1">directory</dependency>
