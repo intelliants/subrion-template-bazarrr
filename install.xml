@@ -223,6 +223,51 @@
 	</changeset>
 
 	<blocks>
+		<block name="adblock1"
+			   title="Advertisement 1"
+			   position="left"
+			   header="0"
+			   collapsible="0"
+			   sticky="1"
+			   order="88"
+			   status="active"
+			   type="smarty">
+			<![CDATA[
+<div class="b-ad">
+	<p>Place for ad</p>
+</div>
+			]]>
+		</block>
+		<block name="adblock2"
+			   title="Advertisement 2"
+			   position="verybottom"
+			   header="0"
+			   collapsible="0"
+			   sticky="1"
+			   order="88"
+			   status="active"
+			   type="smarty">
+			<![CDATA[
+<div class="b-ad b-ad--2">
+	<p>Place for ad</p>
+</div>
+			]]>
+		</block>
+		<block name="adblock3"
+			   title="Advertisement 3"
+			   position="right"
+			   header="0"
+			   collapsible="0"
+			   sticky="1"
+			   order="88"
+			   status="active"
+			   type="smarty">
+			<![CDATA[
+<div class="b-ad">
+	<p>Place for ad</p>
+</div>
+			]]>
+		</block>
 		<block name="info_block"
 			   title="How to post a link"
 			   position="left"

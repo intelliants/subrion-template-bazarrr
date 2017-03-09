@@ -161,7 +161,6 @@
 							{if $core.page.name == 'index'}
 								{include 'block.index.sponsored.tpl'}
 								{include 'block.index.featured.tpl'}
-								{ia_blocks block='verytop'}
 								{ia_blocks block='bottom'}
 							{else}
 								{if in_array($core.page.name, array('login', 'member_registration'))}
