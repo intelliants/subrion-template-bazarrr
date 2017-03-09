@@ -157,6 +157,15 @@
           border-top: 2px solid #ddd;
           background: #f0f0f0;
         }
+
+        @media (max-width: @grid-float-breakpoint) {
+          font-size: 12px;
+          padding: 10px 16px;
+
+          > .fa {
+            margin-right: 3px;
+          }
+        }
       }
 
       &.active > a,
@@ -168,6 +177,11 @@
 
       > span {
         padding: 12px 24px;
+
+        @media (max-width: @grid-float-breakpoint) {
+          font-size: 12px;
+          padding: 10px 16px;
+        }
       }
     }
   }

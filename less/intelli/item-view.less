@@ -65,6 +65,21 @@
     margin-bottom: 15px;
   }
 
+  &__image {
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+
+    @media (max-width: @grid-float-breakpoint) {
+      float: none;
+      margin: 0 0 30px;
+
+      .thumbnail {
+        margin: 0 auto 10px;
+      }
+    }
+  }
+
   &__section {
     margin-bottom: @gap+@gap;
 

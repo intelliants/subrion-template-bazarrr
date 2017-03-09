@@ -6,7 +6,7 @@
 
 	<div class="ia-item m-b">
 		{if $core.config.directory_enable_thumbshots}
-			<div class="pull-left text-center m-r">
+			<div class="ia-item-view__image">
 				<img src="http://free.pagepeeker.com/v2/thumbs.php?size=m&url={$item.url|escape:url}" class="thumbnail js-thumbnail" data-url="{$item.url|escape:url}">
 				{if $item.rank}
 					{section name=star loop=$item.rank}<span class="fa fa-star text-warning"></span> {/section}

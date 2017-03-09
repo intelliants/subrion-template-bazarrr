@@ -153,6 +153,10 @@ body {
     h1 {
       float: left;
       .font-normalize(28px, 0);
+
+      @media (max-width: @grid-float-breakpoint) {
+        float: none;
+      }
     }
   }
 
@@ -174,6 +178,18 @@ body {
         &:hover {
           color: fade(@text-color, 70%);
           text-decoration: none;
+        }
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint) {
+      float: none;
+
+      > li {
+
+        > a {
+          margin-left: 0;
+          margin-right: @vertical-rhythm/2;
         }
       }
     }
