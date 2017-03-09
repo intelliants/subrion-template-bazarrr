@@ -5,7 +5,7 @@
   display: inline-block;
   padding-left: 0;
   margin: @line-height-computed 0;
-  border-radius: @border-radius-base;
+  border-radius: 0;
 
   > li {
     display: inline; // Remove list-style and block-level defaults
@@ -25,13 +25,20 @@
       > a,
       > span {
         margin-left: 0;
-        .border-left-radius(@border-radius-base);
+        .border-left-radius(0);
+        color: #ccc;
+
+        &:hover {
+          color: #ccc;
+          background: @pagination-bg;
+          border-color: @pagination-border;
+        }
       }
     }
     &:last-child {
       > a,
       > span {
-        .border-right-radius(@border-radius-base);
+        .border-right-radius(0);
       }
     }
   }
@@ -80,10 +87,10 @@
 
 // Large
 .pagination-lg {
-  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; 0);
 }
 
 // Small
 .pagination-sm {
-  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 0);
 }
