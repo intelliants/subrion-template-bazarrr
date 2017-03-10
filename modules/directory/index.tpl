@@ -17,7 +17,7 @@
 					<div class="btn-group">
 						<a class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" href="#">
 							{lang key=$sort_name}
-							<span class="caret"></span>
+							<span class="fa fa-angle-down"></span>
 						</a>
 						<ul class="dropdown-menu pull-right">
 							<li><a href="{$smarty.const.IA_SELF}?sort_by=date_added" rel="nofollow"><span class="fa fa-clock-o"></span> {lang key='date_added'}</a></li>
@@ -33,7 +33,7 @@
 							{else}
 								{lang key='desc'}
 							{/if}
-							<span class="caret"></span>
+							<span class="fa fa-angle-down"></span>
 						</a>
 						<ul class="dropdown-menu pull-right">
 							<li><a href="{$smarty.const.IA_SELF}?order_type=asc" rel="nofollow"><span class="fa fa-long-arrow-down"></span> {lang key='asc'}</a></li>
