@@ -12,7 +12,7 @@
 							<span class="fa{if isset($entry.icon) && $entry.icon} {$entry.icon}{else} fa-folder-open{/if}"></span>
 						{/if}
 
-						{if isset($entry.crossed) && $entry.crossed}@&nbsp;{/if}<a href="{ia_url type='url' item=$item data=$entry}">{$entry.title|escape:'html'}</a>
+						{if isset($entry.crossed) && $entry.crossed}@&nbsp;{/if}<a href="{ia_url type='url' item=$item data=$entry}">{$entry.title|escape}</a>
 						{if isset($show_amount) && $show_amount}
 							&mdash; {$entry.num|default:0}
 						{/if}

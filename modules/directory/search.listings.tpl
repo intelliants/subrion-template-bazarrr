@@ -1,4 +1,4 @@
-{if isset($listings) && $listings}
+{if !empty($listings)}
 	<div class="cards">
 		<div class="row">
 			{foreach $listings as $listing}

@@ -1,4 +1,4 @@
-{if isset($block_blog_entries) && $block_blog_entries}
+{if !empty($block_blog_entries)}
 	<div class="blogroll">
 		<div class="row">
 			{foreach $block_blog_entries as $one_blog_entry}

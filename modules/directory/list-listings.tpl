@@ -9,11 +9,11 @@
 		</div>
 		<div class="card__title">
 			<h4>
-				{if isset($listing.crossed) && $listing.crossed}@ {/if}
+				{if !empty($listing.crossed)}@ {/if}
 				{if !$core.config.directory_redirect_to_site}
 					{ia_url type='link' item='listings' data=$listing text=$listing.title}
 				{else}
-					<a href="{$listing.url}" target="_blank">{$listing.title|escape:'html'}</a>
+					<a href="{$listing.url}" target="_blank">{$listing.title|escape}</a>
 				{/if}
 			</h4>
 			<p class="text-overflow"><a href="{$listing.url}" class="url">{$listing.url}</a></p>
