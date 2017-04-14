@@ -40,20 +40,3 @@
 		{/if}
 	</form>
 </div>
-{*
-<div class="row">
-	<div class="col-md-{if $core.providers}8{else}12{/if}">
-		
-	</div>
-	{if $core.providers}
-		<div class="col-md-4">
-			<div class="social-providers">
-				<p>{lang key='login_with_social_network'}:</p>
-				{foreach $core.providers as $name => $provider}
-					<a class="btn btn-block btn-social btn-{$name|lower}" href="{$smarty.const.IA_URL}login/{$name|lower}/"><span class="fa fa-{$name|lower}"></span> {$name}</a>
-				{/foreach}
-			</div>
-		</div>
-	{/if}
-</div>
-*}
