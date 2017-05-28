@@ -152,7 +152,7 @@
 
 					{if isset($iaBlocks.verytop)}
 						<div class="verytop">
-							<div class="container">{ia_blocks block='verytop'}</div>
+							<div class="container-fluid">{ia_blocks block='verytop'}</div>
 						</div>
 					{/if}
 
@@ -242,7 +242,7 @@
 
 					{if isset($iaBlocks.verybottom)}
 						<div class="verybottom">
-							<div class="container">{ia_blocks block='verybottom'}</div>
+							<div class="container-fluid">{ia_blocks block='verybottom'}</div>
 						</div>
 					{/if}
 				</div>
