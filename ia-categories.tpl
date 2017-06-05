@@ -30,16 +30,16 @@
 				{if $entry@iteration % $num_columns == 0 && !$entry@last}
 					</div>
 					{$i = $i+1}
-					{if isset($category) && $category.parent_id >= 0 && $i == 4}
+					{if isset($category) && $category.parent_id >= 0 && $i == $num_columns}
 						<div class="cat-list-simple__hidden">
 					{/if}
 					<div class="row ia-cats">
 				{/if}
 			{/foreach}
 		</div>
-		{if isset($category) && $category.parent_id >= 0 && $i > 4}</div>{/if}
+		{if isset($category) && $category.parent_id >= 0 && $i > $num_columns}</div>{/if}
 
-		{if isset($category) && $category.parent_id >= 0 && $i > 4}
+		{if isset($category) && $category.parent_id >= 0 && $i > $num_columns}
 			<div class="cat-list-simple__more"><a class="js-more-cats" href="#" data-less-cats-text="<span class='fa fa-angle-up'></span> {lang key='less_cats'}" data-more-cats-text="<span class='fa fa-angle-down'></span> {lang key='more_cats'}"><span class="fa fa-angle-down"></span> {lang key='more_cats'}</a></div>
 		{/if}
 	</div>
