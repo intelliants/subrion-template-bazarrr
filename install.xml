@@ -1,296 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module type="template" name="bazarrr">
-	<title>Bazarrr</title>
-	<summary>Directory template</summary>
-	<author>Gleb Surinov</author>
-	<contributor>Intelliants</contributor>
-	<version>1.0.1</version>
-	<date>2017-03-10</date>
-	<compatibility>4.1.0</compatibility>
+    <title>Bazarrr</title>
+    <summary>Directory template</summary>
+    <author>Gleb Surinov</author>
+    <contributor>Intelliants</contributor>
+    <version>1.0.1</version>
+    <date>2017-03-10</date>
+    <compatibility>4.1.0</compatibility>
 
-	<dependency type="package" exist="1">directory</dependency>
+    <dependency type="package" exist="1">directory</dependency>
 
-	<layout>
-		<position menu="1" movable="0">account</position>
-		<position menu="1" movable="0">mainmenu</position>
+    <layout>
+        <position menu="1" movable="0">account</position>
+        <position menu="1" movable="0">mainmenu</position>
 
-		<position>inventory</position>
-		<position>teaser</position>
-		<position>verytop</position>
-		<position>top</position>
-		<position>left</position>
-		<position>bottom</position>
-		<position>verybottom</position>
-		<position>copyright</position>
-		<position>landing</position>
+        <position>inventory</position>
+        <position>teaser</position>
+        <position>verytop</position>
+        <position>top</position>
+        <position>left</position>
+        <position>bottom</position>
+        <position>verybottom</position>
+        <position>copyright</position>
+        <position>landing</position>
 
-		<section name="content">
-			<position width="9">center</position>
-			<position fixed="1">right</position>
-		</section>
-		<section name="footer-blocks">
-			<position width="3">footer1</position>
-			<position width="3">footer2</position>
-			<position width="3">footer3</position>
-			<position width="3">footer4</position>
-		</section>
-	</layout>
+        <section name="content">
+            <position width="9">center</position>
+            <position fixed="1">right</position>
+        </section>
+        <section name="footer-blocks">
+            <position width="3">footer1</position>
+            <position width="3">footer2</position>
+            <position width="3">footer3</position>
+            <position width="3">footer4</position>
+        </section>
+    </layout>
 
-	<configgroup name="template_bazarrr">Template</configgroup>
+    <configgroup name="template_bazarrr">Template</configgroup>
 
-	<config group="template_bazarrr" 
-		    type="divider"
-		    order="3000">General</config>
-	<config group="template_bazarrr"
-		    name="custom_colors" 
-		    type="radio"
-		    order="3002" 
-		    values="1,0" 
-		    description="Enable custom colors and backgrounds">0</config>
-	<config group="template_bazarrr"
-			name="custom_color_body_bg"
-		    type="colorpicker" 
-		    order="3003" 
-		    description="Body background">#eff1f3</config>
-	<config group="template_bazarrr"
-			name="custom_color_text"
-		    type="colorpicker" 
-		    order="3004" 
-		    description="Text color">#7c7e8c</config>
-	<config group="template_bazarrr"
-			name="custom_color_headings"
-		    type="colorpicker" 
-		    order="3005" 
-		    description="Headings color">#393b41</config>
-	<config group="template_bazarrr"
-			name="custom_color_link"
-		    type="colorpicker" 
-		    order="3006" 
-		    description="Link color">#00b6de</config>
-	<config group="template_bazarrr"
-			name="custom_color_link_hover"
-		    type="colorpicker" 
-		    order="3007" 
-		    description="Link hover color">#007792</config>
+    <config group="template_bazarrr"
+            type="divider"
+            order="3000">General</config>
+    <config group="template_bazarrr"
+            name="custom_colors"
+            type="radio"
+            order="3002"
+            values="1,0"
+            description="Enable custom colors and backgrounds">0</config>
+    <config group="template_bazarrr"
+            name="custom_color_body_bg"
+            type="colorpicker"
+            order="3003"
+            description="Body background">#eff1f3</config>
+    <config group="template_bazarrr"
+            name="custom_color_text"
+            type="colorpicker"
+            order="3004"
+            description="Text color">#7c7e8c</config>
+    <config group="template_bazarrr"
+            name="custom_color_headings"
+            type="colorpicker"
+            order="3005"
+            description="Headings color">#393b41</config>
+    <config group="template_bazarrr"
+            name="custom_color_link"
+            type="colorpicker"
+            order="3006"
+            description="Link color">#00b6de</config>
+    <config group="template_bazarrr"
+            name="custom_color_link_hover"
+            type="colorpicker"
+            order="3007"
+            description="Link hover color">#007792</config>
 
-	<config group="template_bazarrr" 
-		    type="divider"
-		    order="3100">Inventory bar</config>
-	<config group="template_bazarrr"
-			name="custom_color_inventory_bg"
-		    type="colorpicker" 
-		    order="3102" 
-		    description="Background">#1c1c23</config>
-	<config group="template_bazarrr"
-			name="custom_color_inventory_link"
-		    type="colorpicker" 
-		    order="3103" 
-		    description="Link color">rgba(255, 255, 255, 0.4)</config>
-	<config group="template_bazarrr"
-			name="custom_color_inventory_link_hover"
-		    type="colorpicker" 
-		    order="3104" 
-		    description="Link hover color">rgba(255, 255, 255, 0.6)</config>
-	<config group="template_bazarrr"
-			name="custom_color_inventory_link_active"
-		    type="colorpicker" 
-		    order="3105" 
-		    description="Link active color">rgba(255, 255, 255, 0.8)</config>
+    <config group="template_bazarrr"
+            type="divider"
+            order="3100">Inventory bar</config>
+    <config group="template_bazarrr"
+            name="custom_color_inventory_bg"
+            type="colorpicker"
+            order="3102"
+            description="Background">#1c1c23</config>
+    <config group="template_bazarrr"
+            name="custom_color_inventory_link"
+            type="colorpicker"
+            order="3103"
+            description="Link color">rgba(255, 255, 255, 0.4)</config>
+    <config group="template_bazarrr"
+            name="custom_color_inventory_link_hover"
+            type="colorpicker"
+            order="3104"
+            description="Link hover color">rgba(255, 255, 255, 0.6)</config>
+    <config group="template_bazarrr"
+            name="custom_color_inventory_link_active"
+            type="colorpicker"
+            order="3105"
+            description="Link active color">rgba(255, 255, 255, 0.8)</config>
 
-	<config group="template_bazarrr" 
-		    type="divider"
-		    order="3200">Navbar / Mainmenu</config>
-	<config group="template_bazarrr" 
-		    name="max_top_menu_items" 
-		    type="text" 
-		    description="Max number of items in Main Menu"
-		    order="3201">6</config>
-	<config group="template_bazarrr"
-		    name="enable_text_logo" 
-		    type="radio"
-		    order="3202" 
-		    values="1,0" 
-		    description="Enable Logo text">0</config>
-	<config group="template_bazarrr"
-			name="logo_text"
-		    type="text" 
-		    order="3203" 
-		    show="enable_text_logo|1" 
-		    description="Logo text">bazarrr</config>
-	<config group="template_bazarrr"
-			name="navbar_sticky"
-		    type="radio" 
-		    order="3204"
-		    values="1,0" 
-		    description="Sticky navbar">1</config>
-	<config group="template_bazarrr"
-			name="custom_color_navbar_bg"
-		    type="colorpicker" 
-		    order="3206" 
-		    description="Background">#1c1c23</config>
-	<config group="template_bazarrr"
-			name="custom_color_navbar_link"
-		    type="colorpicker" 
-		    order="3207" 
-		    description="Link color">rgba(255, 255, 255, 0.65)</config>
-	<config group="template_bazarrr"
-			name="custom_color_navbar_link_hover"
-		    type="colorpicker" 
-		    order="3208" 
-		    description="Link hover color">#fff799</config>
-	<config group="template_bazarrr"
-			name="custom_color_navbar_link_active"
-		    type="colorpicker" 
-		    order="3209" 
-		    description="Link active color">#fff799</config>
+    <config group="template_bazarrr"
+            type="divider"
+            order="3200">Navbar / Mainmenu</config>
+    <config group="template_bazarrr"
+            name="max_top_menu_items"
+            type="text"
+            description="Max number of items in Main Menu"
+            order="3201">6</config>
+    <config group="template_bazarrr"
+            name="enable_text_logo"
+            type="radio"
+            order="3202"
+            values="1,0"
+            description="Enable Logo text">0</config>
+    <config group="template_bazarrr"
+            name="logo_text"
+            type="text"
+            order="3203"
+            show="enable_text_logo|1"
+            description="Logo text">bazarrr</config>
+    <config group="template_bazarrr"
+            name="navbar_sticky"
+            type="radio"
+            order="3204"
+            values="1,0"
+            description="Sticky navbar">1</config>
+    <config group="template_bazarrr"
+            name="custom_color_navbar_bg"
+            type="colorpicker"
+            order="3206"
+            description="Background">#1c1c23</config>
+    <config group="template_bazarrr"
+            name="custom_color_navbar_link"
+            type="colorpicker"
+            order="3207"
+            description="Link color">rgba(255, 255, 255, 0.65)</config>
+    <config group="template_bazarrr"
+            name="custom_color_navbar_link_hover"
+            type="colorpicker"
+            order="3208"
+            description="Link hover color">#fff799</config>
+    <config group="template_bazarrr"
+            name="custom_color_navbar_link_active"
+            type="colorpicker"
+            order="3209"
+            description="Link active color">#fff799</config>
 
-	<config group="template_bazarrr" 
-		    type="divider"
-		    order="3400">Footer</config>
-	<config group="template_bazarrr"
-			name="footer_bg"
-		    type="colorpicker" 
-		    order="3401" 
-		    description="Background">#1c1c23</config>
-	<config group="template_bazarrr"
-			name="footer_link"
-		    type="colorpicker" 
-		    order="3402" 
-		    description="Link color">rgba(255,255,255,0.45)</config>
-	<config group="template_bazarrr"
-			name="footer_link_hover"
-		    type="colorpicker" 
-		    order="3403" 
-		    description="Link hover color">rgba(255,255,255,0.5)</config>
-	<config group="template_bazarrr"
-			name="footer_link_active"
-		    type="colorpicker" 
-		    order="3404" 
-		    description="Link active color">rgba(255,255,255,0.7)</config>
+    <config group="template_bazarrr"
+            type="divider"
+            order="3400">Footer</config>
+    <config group="template_bazarrr"
+            name="footer_bg"
+            type="colorpicker"
+            order="3401"
+            description="Background">#1c1c23</config>
+    <config group="template_bazarrr"
+            name="footer_link"
+            type="colorpicker"
+            order="3402"
+            description="Link color">rgba(255,255,255,0.45)</config>
+    <config group="template_bazarrr"
+            name="footer_link_hover"
+            type="colorpicker"
+            order="3403"
+            description="Link hover color">rgba(255,255,255,0.5)</config>
+    <config group="template_bazarrr"
+            name="footer_link_active"
+            type="colorpicker"
+            order="3404"
+            description="Link active color">rgba(255,255,255,0.7)</config>
 
-	<config group="template_bazarrr" 
-		    type="divider"
-		    order="4000">Social links</config>
-	<config group="template_bazarrr"
-			name="website_social"
-		    type="radio" 
-		    order="4001"
-		    values="1,0" 
-		    description="Show links">1</config>
-	<config group="template_bazarrr"
-			name="website_social_t"
-		    type="text"
-		    order="4002"
-		    show="website_social|1" 
-		    description="Twitter Link">https://twitter.com/IntelliantsLLC</config>
-	<config group="template_bazarrr"
-			name="website_social_f"
-		    type="text" 
-		    order="4003" 
-		    show="website_social|1" 
-		    description="Facebook Link">https://www.facebook.com/Intelliants</config>
-	<config group="template_bazarrr"
-			name="website_social_g"
-		    type="text" 
-		    order="4004" 
-		    show="website_social|1" 
-		    description="Google+ Link">https://plus.google.com/102500660503219569194/posts</config>
-	<config group="template_bazarrr"
-			name="website_social_i"
-		    type="text" 
-		    order="4005" 
-		    show="website_social|1" 
-		    description="LinkedIn Link">#</config>
+    <config group="template_bazarrr"
+            type="divider"
+            order="4000">Social links</config>
+    <config group="template_bazarrr"
+            name="website_social"
+            type="radio"
+            order="4001"
+            values="1,0"
+            description="Show links">1</config>
+    <config group="template_bazarrr"
+            name="website_social_t"
+            type="text"
+            order="4002"
+            show="website_social|1"
+            description="Twitter Link">https://twitter.com/IntelliantsLLC</config>
+    <config group="template_bazarrr"
+            name="website_social_f"
+            type="text"
+            order="4003"
+            show="website_social|1"
+            description="Facebook Link">https://www.facebook.com/Intelliants</config>
+    <config group="template_bazarrr"
+            name="website_social_g"
+            type="text"
+            order="4004"
+            show="website_social|1"
+            description="Google+ Link">https://plus.google.com/102500660503219569194/posts</config>
+    <config group="template_bazarrr"
+            name="website_social_i"
+            type="text"
+            order="4005"
+            show="website_social|1"
+            description="LinkedIn Link">#</config>
 
-	<config group="template_bazarrr" 
-		    name="ckeditor_css" 
-		    type="hidden" 
-		    description="CKEditor CSS"
-		    order="5000">ckeditor.css</config>
+    <config group="template_bazarrr"
+            name="ckeditor_css"
+            type="hidden"
+            description="CKEditor CSS"
+            order="5000">ckeditor.css</config>
 
-	<changeset>
-		<menu position="account" status="active">account</menu>
+    <changeset>
+        <menu position="account" status="active">account</menu>
 
-		<menu position="left" order="-1" status="active" classname="dir-menu">directory</menu>
-		<block status="active" position="bottom" header="1">recent_listings</block>
-		<block status="active" position="bottom" header="0">directory_listings_tabs</block>
+        <menu position="left" order="-1" status="active" classname="dir-menu">directory</menu>
+        <block status="active" position="bottom" header="1">recent_listings</block>
+        <block status="active" position="bottom" header="0">directory_listings_tabs</block>
 
-		<block status="active" position="left" order="99" classname="dir-stats">common_statistics</block>
-		<block status="inactive">blogroll</block>
-		<block status="inactive">new_blog_posts</block>
-		<block status="inactive">blogs_archive</block>
-		<block status="active" order="99" classname="box--filters" position="right">filters</block>
-	</changeset>
+        <block status="active" position="left" order="99" classname="dir-stats">common_statistics</block>
+        <block status="inactive">blogroll</block>
+        <block status="inactive">new_blog_posts</block>
+        <block status="inactive">blogs_archive</block>
+        <block status="active" order="99" classname="box--filters" position="right">filters</block>
+    </changeset>
 
-	<blocks>
-		<block name="adblock1"
-			   title="Advertisement 1"
-			   position="left"
-			   header="0"
-			   collapsible="0"
-			   sticky="1"
-			   order="88"
-			   status="active"
-			   type="smarty">
-			<![CDATA[
+    <blocks>
+        <block name="adblock1"
+               title="Advertisement 1"
+               position="left"
+               header="0"
+               collapsible="0"
+               sticky="1"
+               order="88"
+               status="active"
+               type="smarty">
+            <![CDATA[
 <div class="b-ad">
-	<p>Place for ad</p>
+    <p>Place for ad</p>
 </div>
-			]]>
-		</block>
-		<block name="adblock2"
-			   title="Advertisement 2"
-			   position="verybottom"
-			   header="0"
-			   collapsible="0"
-			   sticky="1"
-			   order="88"
-			   status="active"
-			   type="smarty">
-			<![CDATA[
+            ]]>
+        </block>
+        <block name="adblock2"
+               title="Advertisement 2"
+               position="verybottom"
+               header="0"
+               collapsible="0"
+               sticky="1"
+               order="88"
+               status="active"
+               type="smarty">
+            <![CDATA[
 <div class="b-ad b-ad--2">
-	<p>Place for ad</p>
+    <p>Place for ad</p>
 </div>
-			]]>
-		</block>
-		<block name="adblock3"
-			   title="Advertisement 3"
-			   position="right"
-			   header="0"
-			   collapsible="0"
-			   sticky="1"
-			   order="88"
-			   status="active"
-			   type="smarty">
-			<![CDATA[
+            ]]>
+        </block>
+        <block name="adblock3"
+               title="Advertisement 3"
+               position="right"
+               header="0"
+               collapsible="0"
+               sticky="1"
+               order="88"
+               status="active"
+               type="smarty">
+            <![CDATA[
 <div class="b-ad">
-	<p>Place for ad</p>
+    <p>Place for ad</p>
 </div>
-			]]>
-		</block>
-		<block name="info_block"
-			   title="How to post a link"
-			   position="left"
-			   header="1"
-			   collapsible="0"
-			   sticky="1"
-			   order="99"
-			   status="active"
-			   type="smarty">
-			<![CDATA[
+            ]]>
+        </block>
+        <block name="info_block"
+               title="How to post a link"
+               position="left"
+               header="1"
+               collapsible="0"
+               sticky="1"
+               order="99"
+               status="active"
+               type="smarty">
+            <![CDATA[
 <p>Anyone can post a link to our directory. Please go to <a href="{$smarty.const.IA_URL}registration/">Registration</a> page and follow the instructions.</p>
-			]]>
-		</block>
-	</blocks>
+            ]]>
+        </block>
+    </blocks>
 
-	<phrases>
-		<phrase category="frontend" key="my_account">My account</phrase>
-		<phrase category="frontend" key="login">Log in</phrase>
-		<phrase category="frontend" key="register">Sign up</phrase>
-		<phrase category="frontend" key="back_to_top">Back to top</phrase>
-		<phrase category="frontend" key="admin_dashboard">Admin Dashboard</phrase>
-		<phrase category="frontend" key="search_placeholder">Type here something to search...</phrase>
-		<phrase category="frontend" key="more_cats">More categories</phrase>
-		<phrase category="frontend" key="less_cats">Less categories</phrase>
-	</phrases>
+    <phrases>
+        <phrase category="frontend" key="my_account">My account</phrase>
+        <phrase category="frontend" key="login">Log in</phrase>
+        <phrase category="frontend" key="register">Sign up</phrase>
+        <phrase category="frontend" key="back_to_top">Back to top</phrase>
+        <phrase category="frontend" key="admin_dashboard">Admin Dashboard</phrase>
+        <phrase category="frontend" key="search_placeholder">Type here something to search...</phrase>
+        <phrase category="frontend" key="more_cats">More categories</phrase>
+        <phrase category="frontend" key="less_cats">Less categories</phrase>
+    </phrases>
 </module>
