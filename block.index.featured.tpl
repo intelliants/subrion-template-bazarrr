@@ -1,5 +1,5 @@
 {if $listingsBlocksData.featured}
-    {ia_block header=1 title='Featured listings' movable=false name='featured' collapsible=false classname='dir-featured'}
+    {ia_block header=1 title="{lang key='featured_listings' default='Featured listings'}" movable=false name='featured' collapsible=false classname='dir-featured'}
         <div class="cards">
             <div class="row">
                 {foreach $listingsBlocksData.featured as $listing}
@@ -8,7 +8,7 @@
                             <div class="card__header">
                                 <div class="card__image">
                                     {if $core.config.directory_enable_thumbshots}
-                                        <img src="http://free.pagepeeker.com/v2/thumbs.php?size=m&url={$listing.url|escape:url}" class="img-responsive">
+                                        <img src="//free.pagepeeker.com/v2/thumbs.php?size=m&url={$listing.url|escape:url}" class="img-responsive">
                                     {else}
                                         <img src="{$img}no-preview.png" class="img-responsive" alt="">
                                     {/if}

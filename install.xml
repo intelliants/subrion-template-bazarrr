@@ -292,5 +292,6 @@
         <phrase category="frontend" key="search_placeholder">Type here something to search...</phrase>
         <phrase category="frontend" key="more_cats">More categories</phrase>
         <phrase category="frontend" key="less_cats">Less categories</phrase>
+        <phrase category="frontend" key="featured_listings">Featured listings</phrase>
     </phrases>
 </module>
