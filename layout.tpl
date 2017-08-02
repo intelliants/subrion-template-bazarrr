@@ -92,7 +92,6 @@
                 {/if}
             </div>
         </div>
-{_v($core.config.num_columns)}
         <nav class="navbar navbar-default {if $core.config.navbar_sticky}navbar-sticky{/if}">
             <div class="container-fluid">
                 <div class="navbar-header">
