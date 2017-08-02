@@ -72,6 +72,12 @@
             type="colorpicker"
             order="3007"
             description="Link hover color">#007792</config>
+    <config group="template_bazarrr"
+            name="num_columns"
+            type="select"
+            values="4||3 columns,6||2 columns"
+            description="Number of columns"
+            order="3008">3 columns</config>
 
     <config group="template_bazarrr"
             type="divider"
