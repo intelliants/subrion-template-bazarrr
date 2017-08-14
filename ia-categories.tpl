@@ -28,8 +28,11 @@
                 </div>
 
                 {if $entry@iteration % $num_columns == 0 && !$entry@last}
-                    </div>
                     {$i = $i+1}
+                    {if isset($category) && $category.parent_id >= 0 && $i == $num_columns}
+                        </div>
+                    {/if}
+                    </div>
                     {if isset($category) && $category.parent_id >= 0 && $i == $num_columns}
                         <div class="cat-list-simple__hidden">
                     {/if}
