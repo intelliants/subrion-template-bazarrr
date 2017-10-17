@@ -163,7 +163,7 @@
                                 {include 'block.index.featured.tpl'}
                                 {ia_blocks block='bottom'}
                             {else}
-                                {if in_array($core.page.name, array('login', 'member_registration'))}
+                                {if in_array($core.page.name, array('login', 'registration'))}
                                     <div class="page-system">
                                         <div class="content__header">
                                             <h1>{$core.page.title}</h1>
