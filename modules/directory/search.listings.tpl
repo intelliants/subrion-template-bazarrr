@@ -3,7 +3,7 @@
         <div class="row">
             {foreach $listings as $listing}
                 <div class="col-md-4">
-                    {include 'extra:directory/list-listings'}
+                    {include 'module:directory/list-listings.tpl'}
                 </div>
 
                 {if $listing@iteration % 3 == 0 && !$listing@last}

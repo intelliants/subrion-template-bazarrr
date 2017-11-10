@@ -16,7 +16,7 @@
                         {if !$data.package}
                             {include "search.{$itemName}.tpl" listings=$data.items fields=$data.fields}
                         {else}
-                            {include "extra:{$data.package}/search.{$itemName}" listings=$data.items fields=$data.fields}
+                            {include "module:{$data.package}/search.{$itemName}.tpl" listings=$data.items fields=$data.fields}
                         {/if}
                     </div>
                 {/if}
