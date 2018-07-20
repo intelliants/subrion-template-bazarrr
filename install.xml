@@ -299,5 +299,6 @@
         <phrase category="frontend" key="more_cats">More categories</phrase>
         <phrase category="frontend" key="less_cats">Less categories</phrase>
         <phrase category="frontend" key="featured_listings">Featured listings</phrase>
+        <phrase category="frontend" key="sponsored_listings">Sponsored listings</phrase>
     </phrases>
 </module>

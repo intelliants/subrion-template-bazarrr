@@ -1,5 +1,5 @@
 {if $listingsBlocksData.sponsored}
-    {ia_block header=1 title='Sponsored listings' movable=false name='sponsored' collapsible=false classname='dir-sponsored'}
+    {ia_block header=1  title="{lang key='sponsored_listings' default='Sponsored listings'}" movable=false name='sponsored' collapsible=false classname='dir-sponsored'}
         <div class="cards">
             <div class="row">
                 {foreach $listingsBlocksData.sponsored as $listing}
